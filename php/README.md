@@ -6,10 +6,10 @@
   - `delete_student.php`: Script to delete a student.
   - `fetch_student.php`: Script to fetch a single student.
   - `fetch_students.php`: Script to fetch multiple students.
-  - `get_last_id.php`: Script to retrieve the last inserted ID.
+  - `get_last_id.php`: Script to retrieve the last id.
   - `update_student.php`: Script to update a student.
 
-- **classes/**: Contains PHP classes.
+- **app/classes/**: Contains PHP classes.
 
   - `StudentList.php`: PHP class for handling lists of students.
 
