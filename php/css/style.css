@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+body {
+  background-color: #1f2739;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+main h1 {
+  color: #fff842;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+table th {
+  font-weight: bold;
+  text-align: center;
+  color: #4dc3fa;
+}
+
+table td {
+  text-align: center;
+  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
+  -moz-box-shadow: 0 2px 2px -2px #0e1119;
+  box-shadow: 0 2px 2px -2px #0e1119;
+  color: #a7a1ae;
+}
+
+table td:first-child {
+  color: #66fb68;
+}
+
+table th,
+table td {
+  padding: 1rem 0;
+}
+
+table tr:nth-child(odd) {
+  background-color: #323c50;
+}
+
+table tr:nth-child(even) {
+  background-color: #2c3446;
+}
+
+table button {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 10rem;
+  width: 6rem;
+  background-color: #185875;
+  border: 2px solid #2598cc;
+  color: #a7a1ae;
+}
+
+table button:hover {
+  background-color: transparent;
+  color: #66fb68;
+  cursor: pointer;
+  border: 2px solid green;
+}
+
+table button:last-child:hover {
+  color: red;
+  border: 2px solid red;
+}
+
+.add-student {
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 3.5rem;
+  background-color: #185875;
+  border: 2px solid #2598cc;
+  color: #d7cee0;
+}
+
+.add-student:hover {
+  background-color: transparent;
+}
+
+dialog {
+  position: absolute;
+  padding: 2rem;
+  background-color: #323c50;
+  border-radius: 2.5rem;
+  border-color: #2598cc;
+}
+
+dialog::backdrop {
+  background-color: hsl(0, 0%, 0%, 0.4);
+}
+
+dialog div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-dialog {
+  width: 15rem;
+}
+
+.delete-dialog p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #d7cee0;
+  text-align: center;
+}
+
+.delete-dialog button {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10rem;
+  width: 6rem;
+  border: 2px solid #2598cc;
+  background-color: #185875;
+  margin-top: 1rem;
+}
+
+.delete-dialog .yes {
+  color: #4eeb23;
+}
+
+.delete-dialog .yes:hover {
+  background-color: transparent;
+  border-color: #4eeb23;
+}
+
+.delete-dialog .no {
+  color: red;
+}
+
+.delete-dialog .no:hover {
+  background-color: transparent;
+  border-color: red;
+}
+
+.add-dialog,
+.edit-dialog {
+  width: 25rem;
+}
+
+.add-dialog h3,
+.edit-dialog h3 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 2rem;
+  color: #66fb68;
+}
+
+.add-dialog .input-con,
+.edit-dialog .input-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.add-dialog label,
+.edit-dialog label {
+  font-size: 1.25rem;
+  color: #a7a1ae;
+  font-weight: 700;
+  width: 15rem;
+}
+
+.add-dialog input,
+.edit-dialog input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1.25rem;
+  background-color: #2c3446;
+  color: #f4ebfc;
+  border: none;
+}
+
+.add-dialog #student-id,
+.edit-dialog #edit-student-id {
+  background-color: transparent;
+  outline: none;
+  cursor: default;
+  text-align: center;
+  font-weight: 700;
+}
+
+.add-dialog button,
+.edit-dialog button {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10rem;
+  width: 7rem;
+  border: 2px solid #2598cc;
+  background-color: #185875;
+  margin-top: 1rem;
+  color: #d7cee0;
+}
+
+.add-dialog button:first-child:hover,
+.edit-dialog button:first-child:hover {
+  color: red;
+  background-color: transparent;
+}
+
+.add-dialog button:last-child:hover,
+.edit-dialog button:last-child:hover {
+  background-color: transparent;
+  border-color: #4eeb23;
+  color: #4eeb23;
+}
+
+.add-dialog #gender,
+.edit-dialog #edit-gender {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1.25rem;
+  background-color: #2c3446;
+  color: #f4ebfc;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+  .add-student {
+    right: 7.5rem;
+  }
+}

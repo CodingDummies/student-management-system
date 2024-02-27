@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Student Management System</title>
+</head>
+
+<body>
+  <main>
+    <h1>STUDENT MANAGEMENT SYSTEM</h1>
+
+    <table>
+      <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Program</th>
+        <th>Year Level</th>
+        <th>Gender</th>
+        <th>Action</th>
+      </tr>
+    </table>
+    <button class="add-student">ADD NEW STUDENT</button>
+
+    <dialog class="delete-dialog">
+      <p>Are you sure you want to delete this book?</p>
+      <div>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+      </div>
+    </dialog>
+
+    <dialog class="add-dialog">
+      <h3 id="title">ADD STUDENT</h3>
+      <form action="" method="dialog" id="add-student-form">
+        <div class="input-con">
+          <label for="student-id">Student ID:</label>
+          <input type="number" id="student-id" readonly class="id" required />
+        </div>
+        <div class="input-con">
+          <label for="name">Name:</label>
+          <input type="text" id="name" autocomplete="off" required />
+        </div>
+        <div class="input-con">
+          <label for="age">Age:</label>
+          <input type="number" id="age" autocomplete="off" required />
+        </div>
+        <div class="input-con">
+          <label for="program">Program:</label>
+          <input type="text" id="program" autocomplete="off" required />
+        </div>
+        <div class="input-con">
+          <label for="year-level">Year Level:</label>
+          <input type="number" id="year-level" autocomplete="off" required />
+        </div>
+        <div class="input-con">
+          <label for="gender">Gender:</label>
+          <select id="gender" required>
+            <option value="" disabled selected>SELECT GENDER</option>
+            <option value="male">MALE</option>
+            <option value="female">FEMALE</option>
+            <option value="other">OTHER</option>
+          </select>
+        </div>
+
+        <div class="button-con">
+          <button type="button" class="cancel-add">CANCEL</button>
+          <button id="submit" type="submit" name="submit">Add</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="edit-dialog">
+      <h3 id="title">EDIT STUDENT</h3>
+      <form action="" method="dialog" id="edit-student-form">
+        <div class="input-con">
+          <label for="edit-student-id">Student ID:</label>
+          <input type="number" id="edit-student-id" readonly class="id" required />
+        </div>
+        <div class="input-con">
+          <label for="edit-name">Name:</label>
+          <input type="text" id="edit-name" autocomplete="off" required />
+        </div>
+        <div class="input-con">
+          <label for="edit-age">Age:</label>
+          <input type="number" id="edit-age" autocomplete="off" required />
+        </div>
+        <div class="input-con">
+          <label for="edit-program">Program:</label>
+          <input type="text" id="edit-program" autocomplete="off" required />
+        </div>
+        <div class="input-con">
+          <label for="edit-year-level">Year Level:</label>
+          <input type="number" id="edit-year-level" autocomplete="off" required />
+        </div>
+        <div class="input-con">
+          <label for="edit-gender">Gender:</label>
+          <select id="edit-gender" required>
+            <option value="" disabled selected>SELECT GENDER</option>
+            <option value="male">MALE</option>
+            <option value="female">FEMALE</option>
+            <option value="other">OTHER</option>
+          </select>
+        </div>
+
+        <div class="button-con">
+          <button type="button" class="cancel-edit">CANCEL</button>
+          <button id="edit-submit" type="submit" name="submit">EDIT</button>
+        </div>
+      </form>
+    </dialog>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
