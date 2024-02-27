@@ -1,0 +1,31 @@
+CREATE DATABASE db_students;
+USE db_students;
+
+CREATE TABLE tbl_students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(55) NOT NULL,
+    age INT NOT NULL,
+    program VARCHAR(55) NOT NULL,
+    year_level INT NOT NULL,
+    gender VARCHAR(55) NOT NULL
+) AUTO_INCREMENT=2101259;
+
+
+CREATE TABLE tbl_ids(
+	id INT PRIMARY KEY AUTO_INCREMENT
+) AUTO_INCREMENT=2101259;
+
+INSERT INTO tbl_students (name, age, program, year_level, gender)
+VALUES ("ELLA JOHNSON", 20, "BSCS", 3, "FEMALE"),
+	   ("ADAM SMITH", 22, "BBA", 4, "MALE"),
+       ("SOPHIA GARCIA", 19, "BA English", 1, "FEMALE"),
+       ("NOAH MARTINEZ", 23, "Biology", 4, "MALE"),
+       ("OLIVIA BROWN", 20, "Psychology", 2, "FEMALE");
+       
+INSERT INTO tbl_ids
+VALUES (), (), (), (), ();
+       
+SELECT * FROM tbl_students;
+SELECT * FROM tbl_ids;
+
+DROP DATABASE db_students;
